@@ -1,20 +1,30 @@
 name = "story_bakery/replicated_instance_id"
 version = "0.1.0"
 license = "MIT"
-includes = ["pesde.toml", "LICENSE", "README.md", ".pesde/scripts/roblox_sync_config_generator.luau", ".pesde/scripts/sourcemap_generator.luau", "src/**/*.luau", "src/**/*.json", "tests/**/*.luau"]
+includes = [
+    "pesde.toml",
+    "LICENSE",
+    "README.md",
+    ".pesde/scripts/roblox_sync_config_generator.luau",
+    ".pesde/scripts/sourcemap_generator.luau",
+    "src/**/*.luau",
+    "src/**/*.json",
+    "tests/**/*.luau",
+]
 
 [target]
 environment = "roblox"
 lib = "src/init.luau"
-build_files = [
-    "src",
-]
+build_files = ["src"]
 
 [indices]
 default = "https://github.com/pesde-pkg/index"
 
+[wally_indices]
+default = "https://github.com/UpliftGames/wally-index"
+
 [dependencies]
-Promise = { wally = "evaera/promise", version = "^4.0.0" }
+promise = { wally = "evaera/promise", version = "^4.0.0" }
 base91 = { wally = "dekkonot/base91", version = "^1.1.0" }
 
 [scripts]
