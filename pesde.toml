@@ -1,4 +1,4 @@
-name = "story_bakery/replicated_instance_id"
+name = "storybakery/replicated_instance_id"
 version = "0.1.0"
 license = "MIT"
 includes = [
